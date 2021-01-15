@@ -1,9 +1,9 @@
 // ref. https://github.com/Microsoft/vscode-remote-try-python
 {
-  "name": "Python Repository Simple",
+  "name": "atcoder_env",
   // Use docker-compose.extend.yml to run a command that keeps the container running.
   "dockerComposeFile": ["../docker-compose.yml"],
-  "service": "python_repository_simple",
+  "service": "atcoder_env",
   "workspaceFolder": "/project",
   "shutdownAction": "stopCompose",
   // Comment out the next line to run as root instead. Linux users,
@@ -18,15 +18,14 @@
     "terminal.integrated.shell.linux": "/bin/bash",
     "python.pythonPath": "/usr/local/bin/python",
     "python.linting.pylintEnabled": false,
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": ["--config=.flake8"],
+    "python.linting.enabled": false,
+    "python.linting.flake8Enabled": false,
     "python.linting.lintOnSave": true,
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": ["--line-length", "100"],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true,
+    "python.testing.pytestEnabled": false,
     "python.analysis.diagnosticMode": "workspace",
     "python.jediEnabled": false,
     "python.languageServer": "Pylance",
@@ -41,21 +40,14 @@
     "[python]": {
       "editor.tabSize": 4
     },
-    "[json]": {
-      "editor.tabSize": 2
-    },
-    "[yaml]": {
-      "editor.tabSize": 2
-    },
-    "autoDocstring.docstringFormat": "numpy",
     "autoDocstring.startOnNewLine": true
   },
   "extensions": [
     "ms-python.python",
     "esbenp.prettier-vscode",
-    "njpwerner.autodocstring",
     "eamodio.gitlens",
     "ms-python.vscode-pylance",
-    "VisualStudioExptTeam.vscodeintellicode"
+    "VisualStudioExptTeam.vscodeintellicode",
+    "hirosuzuki.atcoder-python-snippets"
   ]
 }

@@ -1,6 +1,6 @@
 version: "3"
 services:
-  python_repository_simple:
+  atcoder_env:
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
@@ -9,7 +9,6 @@ services:
     volumes:
       - .:/project
       - ${USERPROFILE-~}/.ssh:/home/vscode/.ssh
-    image: python_repository_simple-image
-    container_name: python_repository_simple-container
+    image: atcoder_env-image
+    container_name: atcoder_env-container
     tty: true
-    env_file: .env # shellスクリプト内でも環境変数として使用するため

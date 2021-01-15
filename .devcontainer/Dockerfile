@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.8.7
+ARG PYTHON_VERSION=3.8.2
 FROM python:${PYTHON_VERSION}
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -49,19 +49,17 @@ RUN /bin/echo -e "\n\
     Acquire::http::Timeout \"300\";\n\
     Acquire::ftp::Timeout \"300\";" >> /etc/apt/apt.conf.d/99timeout
 
-# pyright install
+# atcoder-cli install
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     && apt-get install -y nodejs \
-    && npm install --global pyright
-
+    && npm install --global atcoder-cli
 RUN pip install -U pip
 
 # copy requirements files
 COPY ./requirements.txt /tmp/requirements.txt
-COPY ./requirements-dev.txt /tmp/requirements-dev.txt
 
 # library install
-RUN pip install -r /tmp/requirements.txt -r /tmp/requirements-dev.txt
+RUN pip install -r /tmp/requirements.txt
 
 ENV DEBIAN_FRONTEND=
 CMD ["/bin/bash"]
