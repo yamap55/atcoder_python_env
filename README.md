@@ -56,6 +56,6 @@
 acc new abs
 cd abs/practicea/
 vi main.py
-oj t -c "python ./a.py" -d ./tests/
+oj t -c "python ./main.py" -d ./tests/
 acc submit main.py
 ```
