@@ -59,3 +59,12 @@ vi main.py
 oj t -c "python ./main.py" -d ./tests/
 acc submit main.py
 ```
+
+## 参考
+
+- online-judge-tools
+  - https://github.com/online-judge-tools/oj/blob/master/docs/getting-started.ja.md
+- atcoder-cli
+  - http://tatamo.81.la/blog/2018/12/07/atcoder-cli/
+- atcoder-python-snippets
+  - https://github.com/hirosuzuki/atcoder-python-snippets
