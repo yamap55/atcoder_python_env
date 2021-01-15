@@ -1,9 +1,9 @@
 // ref. https://github.com/Microsoft/vscode-remote-try-python
 {
-  "name": "atcoder_env",
+  "name": "atcoder_python_env",
   // Use docker-compose.extend.yml to run a command that keeps the container running.
   "dockerComposeFile": ["../docker-compose.yml"],
-  "service": "atcoder_env",
+  "service": "atcoder_python_env",
   "workspaceFolder": "/project",
   "shutdownAction": "stopCompose",
   // Comment out the next line to run as root instead. Linux users,

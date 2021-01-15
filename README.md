@@ -1,4 +1,4 @@
-# atcoder_env
+# atcoder_python_env
 
 本リポジトリは Atcoder を Python で取り組むための環境になります
 
