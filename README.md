@@ -42,13 +42,11 @@
 9. 回答する問題のディレクトリに移動
    - `cd {contestID}/{問題}`
 10. 回答を作成
-    - 例: `cd abs/practicea`
-    - ファイル名は何でも良い
-    - 例: `main.py`
+    - `main.py` に回答を記載
 11. 回答をテスト
-    - `oj t -c "python main.py -d ./tests/"`
+    - `oj t -c "python main.py"`
 12. 回答を提出
-    - `acc submit main.py`
+    - `acc submit`
 
 ### 使用例
 
@@ -56,7 +54,7 @@
 acc new abs
 cd abs/practicea/
 vi main.py
-oj t -c "python ./main.py" -d ./tests/
+oj t -c "python ./main.py"
 acc submit main.py
 ```
 

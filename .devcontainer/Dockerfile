@@ -53,13 +53,18 @@ RUN /bin/echo -e "\n\
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     && apt-get install -y nodejs \
     && npm install --global atcoder-cli
-RUN pip install -U pip
 
+RUN pip install -U pip
 # copy requirements files
 COPY ./requirements.txt /tmp/requirements.txt
 
 # library install
 RUN pip install -r /tmp/requirements.txt
+
+# atcoer env setting
+COPY templates/ /home/$USERNAME/.config/atcoder-cli-nodejs/
+RUN sudo chown -R $USERNAME:$USERNAME /home/$USERNAME/.config/ \
+    && sudo -u $USERNAME acc config default-template py
 
 ENV DEBIAN_FRONTEND=
 CMD ["/bin/bash"]
