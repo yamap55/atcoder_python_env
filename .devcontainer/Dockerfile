@@ -16,7 +16,7 @@ RUN chsh -s /bin/bash
 RUN rm -rf /var/lib/apt/lists/* \
     && apt-get update \
     && apt-get upgrade -y \
-    && apt-get -y install sudo vim tzdata less \
+    && apt-get -y install sudo vim tzdata less time \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
