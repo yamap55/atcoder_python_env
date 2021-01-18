@@ -8,7 +8,7 @@ online-judge-tools==11.1.1
 ipykernel==5.4.3
 
 # lib
-numpy==1.18.2
+numpy==1.19.5
 scipy==1.4.1
 scikit-learn==0.22.2.post1
 numba==0.48.0
