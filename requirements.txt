@@ -10,6 +10,6 @@ ipykernel==5.4.3
 # lib
 numpy==1.18.2
 scipy==1.4.1
-scikit-learn==0.22.2.post1
+scikit-learn==0.24.0
 numba==0.48.0
 networkx==2.4
