@@ -9,5 +9,12 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    ignore:
+      # atcoder env version
+      - dependency-name: "numpy"
+      - dependency-name: "scipy"
+      - dependency-name: "scikit-learn"
+      - dependency-name: "numba"
+      - dependency-name: "networkx"
     reviewers:
       - "yamap55"
