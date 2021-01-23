@@ -65,6 +65,7 @@ RUN pip install -r /tmp/requirements.txt
 COPY templates/ /home/$USERNAME/.config/atcoder-cli-nodejs/
 RUN sudo chown -R $USERNAME:$USERNAME /home/$USERNAME/.config/ \
     && sudo -u $USERNAME acc config default-template py
+RUN echo "alias ojt='oj t -c \"python main.py\"'" >> /home/vscode/.bashrc
 
 ENV DEBIAN_FRONTEND=
 CMD ["/bin/bash"]

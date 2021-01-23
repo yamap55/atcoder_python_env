@@ -44,9 +44,11 @@
 10. 回答を作成
     - `main.py` に回答を記載
 11. 回答をテスト
-    - `oj t -c "python main.py"`
+    - `ojt`
 12. 回答を提出
     - `acc submit`
+
+※`ojt` は `oj t -c "python main.py"'` のエイリアス
 
 ### 使用例
 
@@ -54,7 +56,7 @@
 acc new abs
 cd abs/practicea/
 vi main.py
-oj t -c "python ./main.py"
+ojt
 acc submit main.py
 ```
 
