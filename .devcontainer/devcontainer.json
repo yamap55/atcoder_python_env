@@ -35,7 +35,7 @@
     "vsintellicode.modify.editor.suggestSelection": "enabled",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": false
     },
     "[python]": {
       "editor.tabSize": 4
