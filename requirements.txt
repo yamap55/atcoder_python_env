@@ -1,5 +1,5 @@
 # lint
-black==21.4b0
+black==21.4b2
 
 # atcoder
 online-judge-tools==11.2.1
