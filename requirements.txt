@@ -2,7 +2,7 @@
 black==20.8b1
 
 # atcoder
-online-judge-tools==11.2.1
+online-judge-tools==11.3.0
 
 # notebook
 ipykernel==5.5.3
