@@ -5,7 +5,7 @@ black==21.8b0
 online-judge-tools==11.4.0
 
 # notebook
-ipykernel==6.3.1
+ipykernel==6.4.1
 
 # lib
 numpy==1.18.2
