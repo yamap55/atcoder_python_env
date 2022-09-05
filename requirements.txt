@@ -1,5 +1,5 @@
 # lint
-black==22.6.0
+black==22.8.0
 
 # atcoder
 online-judge-tools==11.5.1
